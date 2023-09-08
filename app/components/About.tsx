@@ -16,7 +16,7 @@ const About = () => {
         <p className="text-xl mt-10">
           I am highly motivated, eager to learn new technologies and always looking for ways to improve my skills.
           I am also a quick learner and confident that I have the skills and experience that you are looking for in a Frontend Developer. I can handle day to day English conversation.
-          I am eager to leverage my expertise and contribute to any company's mission and success.
+          I am eager to leverage my expertise and contribute to any company&apos;s mission and success.
         </p>
       </div>
     </div>
