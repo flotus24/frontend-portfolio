@@ -35,7 +35,7 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: "/next.svg",
+      src: "/nextjs.svg",
       title: "Next JS",
       style: "shadow-white"
     },
