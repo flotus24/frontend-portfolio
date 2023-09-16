@@ -29,8 +29,8 @@ const Bio = () => {
             </Link>
           </div>
         </div>
-        <div>
-          <img src="/myimage.jpeg" alt="My Profile" className="rounded-2xl mx-auto w-2/3 md:w-3/4" />
+        <div className="pt-7 md:pt-0">
+          <img src="/myimage.jpeg" alt="My Profile" className="rounded-2xl mx-auto sm:w-2/3 md:w-3/4" />
         </div>
       </div>
     </div>
