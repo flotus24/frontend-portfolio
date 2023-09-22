@@ -7,10 +7,11 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-      signature: ["Great Vibes"],
-    }
+    extend: {
+      fontFamily: {
+        signature: ["Great Vibes"],
+      }
+    }  
   },
   plugins: [],
 }

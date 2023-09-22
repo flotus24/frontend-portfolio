@@ -50,13 +50,14 @@ const Portfolio = () => {
                 <div className="sm:h-[220px]">
                   <p className="py-3 px-3">{desc}</p>
                 </div>
-                <a
-                  href={link}
-                  className={`center m-4 duration-200 hover:scale-105 ${style} text-white w-fit px-3 py-1 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer`}
-                  target="_blank"
-                >
-                  Code
-                </a>
+                <div className={`hover:animate-pulse center m-4 duration-200 hover:scale-105 ${style} text-white w-fit px-3 py-1 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer`}>
+                  <a
+                    href={link}
+                    target="_blank"
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
             </div>
           ))}
