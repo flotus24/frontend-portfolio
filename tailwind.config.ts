@@ -10,6 +10,15 @@ const config: Config = {
     extend: {
       fontFamily: {
         signature: ["Great Vibes"],
+      },
+      keyframes: {
+        ping_logo: {
+          "0%, 100%": { transform: "scale(1)" },
+          "60%": { transform: "scale(0.9)", opacity: "0.8" },
+        }
+      },
+      animation: {
+        ping_logo: "ping_logo 2s"
       }
     }  
   },
