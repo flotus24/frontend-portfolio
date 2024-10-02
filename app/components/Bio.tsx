@@ -11,14 +11,9 @@ const Bio = () => {
         <div className="flex flex-col justify-center font-bold">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">I&apos;m a Frontend Developer</h2>
           <p className="text-gray-500 py-4 max-w-md">
-            Student of computer science at Universitas Pendidikan Indonesia. Until semester 8,
-            I have accumulated 3.75 GPA and worked with few projects in C and python language.
+            I have recently graduated with a degree in Computer Science at Universitas Pendidikan Indonesia with a GPA of 3.76.
             I am now interested in front-end development and have worked with React, Next.js, Bootstrap, and Tailwind.
-            {/* I have experience using Pandas and Matplotlib to analyze data libraries by 
-                    enhancing analytics and modeling for quality visualizations. I also have experience using 
-                    scikit-learn library utilizing decision tree classifier to make classification models. 
-                    I have enrolled in 2022 bangkit in machine learning and it provided me with valuable knowledge. 
-                    I love solving problems because for me it is just like solving puzzles. */}
+            On my latest project I made a GIS website that visualize drought map with next.js and also deployed my own localhost server with node.js and express.js.
           </p>
           <div>
             <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">

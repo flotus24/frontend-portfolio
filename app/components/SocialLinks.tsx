@@ -30,16 +30,15 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "https://docs.google.com/document/d/1NB3_bUNlI5FrMp3xilP4oARvWgZKzHjbdtoZzS2g4RU/edit",
       style: "rounded-br-md",
-      download: true,
     },
   ]
 
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, child, href, style, download }) => (
+        {links.map(({ id, child, href, style }) => (
           <li
             key={id}
             className={
@@ -51,7 +50,6 @@ const SocialLinks = () => {
             <a
               href={href}
               className="flex justify-between items-center w-full text-white"
-              download={download}
               target="_blank"
               rel="noreferrer"
             >
