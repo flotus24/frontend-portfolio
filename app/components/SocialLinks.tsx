@@ -3,7 +3,15 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const SocialLinks = () => {
-  const links = [
+
+  type Link = {
+    id: number,
+    child: any,
+    href: string,
+    style?: string
+  }
+
+  const links: Link[] = [
     {
       id: 1,
       child: (

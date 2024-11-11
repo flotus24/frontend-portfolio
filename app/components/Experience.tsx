@@ -2,7 +2,14 @@ import React from 'react'
 
 const Experience = () => {
 
-  const techs = [
+  type Techs = {
+    id: number,
+    src: string,
+    title: string,
+    style: string
+  }
+
+  const techs: Techs[] = [
     {
       id: 1,
       src: "/html5.svg",

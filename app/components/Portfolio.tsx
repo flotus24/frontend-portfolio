@@ -1,7 +1,15 @@
 import React from "react"
 
 const Portfolio = () => {
-  const portfolios = [
+
+  type Portfolio = {
+    id: number,
+    src: string,
+    link: string,
+    desc: string
+  }
+
+  const portfolios: Portfolio[] = [
     {
       id: 1,
       src: "/land_map.PNG",
