@@ -12,7 +12,7 @@ const Portfolio = () => {
     {
       id: 1,
       src: "/jamazon.PNG",
-      link: "https://github.com/flotus24/DeteksiCovid",
+      link: "https://github.com/flotus24/jamazon",
       desc: "Jamazon, an e-commerce website inspired by Amazon and Tokopedia, a platform that combines user-friendly design and vast product selection.",
     },
     {
