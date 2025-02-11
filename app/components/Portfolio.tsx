@@ -1,4 +1,7 @@
+"use client"
+
 import React from "react"
+import { motion } from "motion/react"
 
 const Portfolio = () => {
   type Portfolio = {
@@ -33,11 +36,33 @@ const Portfolio = () => {
     <div id="portfolio" className="bg-slate-950 w-full text-white md:h-[90vh]">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold text-cyan-300">Portfolio</p>
-          <p className="mt-3">Check out some of my work right here</p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [50, 0] }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl font-bold text-cyan-300"
+          >
+            Portfolio
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [25, 0] }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, times: [0.5] }}
+            className="font-secondary mt-3"
+          >
+            Check out some of my work right here
+          </motion.p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 pb-20 sm:pb-0">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5, times: [0.5] }}
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 pb-20 sm:pb-0"
+        >
           {portfolios.map(({ id, src, link, desc }) => (
             <div
               key={id}
@@ -52,7 +77,7 @@ const Portfolio = () => {
               </div>
               <div className="flex flex-col items-center justify-center ">
                 <div className="sm:h-[175px]">
-                  <p className="py-3 px-3">{desc}</p>
+                  <p className="font-secondary py-3 px-3">{desc}</p>
                 </div>
                 <div
                   className={`hover:animate-pulse center m-4 duration-200 hover:scale-105 text-white w-fit px-3 py-1 flex items-center rounded-md bg-sky-500 cursor-pointer`}
@@ -64,7 +89,7 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   )

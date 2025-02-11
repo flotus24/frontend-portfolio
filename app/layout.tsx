@@ -1,8 +1,8 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Raleway } from "next/font/google"
+import { Open_Sans } from "next/font/google"
 
-const raleway = Raleway({ subsets: ["latin"] })
+const sans = Open_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Frontend Portfolio",
@@ -16,9 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
-        {children}
-      </body>
+      <body className={sans.className}>{children}</body>
     </html>
   )
 }

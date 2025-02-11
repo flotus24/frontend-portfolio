@@ -1,15 +1,40 @@
+"use client"
+
 import React from "react"
+import { motion } from "motion/react"
 
 const Contact = () => {
   return (
     <div id="contact" className="w-full h-[95vh] bg-slate-900 text-white">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold text-cyan-300">Contact</p>
-          <p className="mt-3">Submit the form below to get in touch with me</p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [50, 0] }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl font-bold text-cyan-300"
+          >
+            Contact
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [25, 0] }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, times: [0.5] }}
+            className="font-secondary mt-3"
+          >
+            Submit the form below to get in touch with me
+          </motion.p>
         </div>
 
-        <div className="flex justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5, times: [0.5] }}
+          className="flex justify-center items-center"
+        >
           <form
             action="https://getform.io/f/878864e4-fd77-4dfe-be31-7d859c3af2bd"
             method="POST"
@@ -37,7 +62,7 @@ const Contact = () => {
               Let&apos;s Talk
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
