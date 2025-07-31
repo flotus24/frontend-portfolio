@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import React from "react"
-import { motion } from "motion/react"
+import React from "react";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
@@ -23,22 +23,23 @@ const About = () => {
           transition={{ duration: 1, times: [0.5] }}
           className="font-secondary md:text-xl mt-3"
         >
-          I have recently graduated with a degree in Computer Science at
-          Universitas Pendidikan Indonesia with a GPA of 3.76. On my final
-          project as a bachelor student I made a GIS website that visualize
-          drought map with next.js and also deployed my own localhost server
-          with node.js and express.js. I am highly motivated, eager to learn new
-          technologies and always looking for ways to improve my skills. I am
-          now interested in front-end development and have worked with React,
-          Next.js, Bootstrap, and Tailwind. I am also a quick learner and
-          confident that I have the skills and experience that you are looking
-          for in a Frontend Developer. I can handle day to day English
-          conversation. I am eager to leverage my expertise and contribute to
-          any company&apos;s mission and success.
+          Graduated with a degree in Computer Science at Universitas Pendidikan
+          Indonesia with a GPA of 3.76. On my final project as a bachelor
+          student I made a GIS website that visualize drought map with next.js
+          and backend with NodeJS and ExpressJS. I am highly motivated, eager to
+          learn new technologies and always looking for ways to improve my
+          skills. Recently I started to lexpand my backend knowledge and
+          deployed my own website through web server and now interested in
+          full-stack development. I have worked with bunch of techs from React,
+          NestJS, to Socket.io. I am also a quick learner and confident that I
+          have the skills and experience that you are looking for in a Frontend
+          Developer. I can handle day to day English conversation. I am eager to
+          leverage my expertise and contribute to any company&apos;s mission and
+          success.
         </motion.p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
