@@ -22,18 +22,25 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      src: "/burger-joint.png",
+      link: "https://burger-joint-demo.netlify.app/",
+      code: "https://github.com/flotus24/burger-joint",
+      desc: "Single page website for a trendy burger restaurant with modern design using latest gsap animation.",
+    },
+    {
+      id: 3,
       src: "/jamazon.PNG",
       code: "https://github.com/flotus24/jamazon",
       desc: "Jamazon, an e-commerce website inspired by Amazon and Tokopedia, a platform that combines user-friendly design and vast product selection.",
     },
     {
-      id: 3,
+      id: 4,
       src: "/land_map.PNG",
       code: "https://github.com/flotus24/Land-Map",
       desc: "Land Map was made as a product of a thesis where it aims to centralize the mapping of the earth's surface, especially drought, on a website with the help of remote sensing.",
     },
     {
-      id: 4,
+      id: 5,
       src: "/ocors.PNG",
       code: "https://github.com/naufal58/OCORS/tree/main/OCORS",
       desc: "OCORS stand for Online Comic Reader and Store is a website that our team developed to read and buy comic so reader can read and buy comic legally and easily through our portal.",
