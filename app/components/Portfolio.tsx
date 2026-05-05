@@ -8,39 +8,44 @@ const Portfolio = () => {
     id: number;
     src: string;
     link?: string;
-    code: string;
+    code?: string;
     desc: string;
   };
 
   const portfolios: Portfolio[] = [
     {
       id: 1,
-      src: "/realtime-chat.PNG",
-      link: "https://rifqi367.com",
-      code: "https://github.com/flotus24/jamazon",
-      desc: "A real-time chat application leveraging Next.js for a responsive frontend, NestJS for a scalable backend, and Socket.IO to enable efficient, bidirectional communication.",
+      src: "/subkom.PNG",
+      link: "https://subkom.co.id/",
+      desc: "Freelance project for a computer hardware store delivering a responsive single-page website using React, GSAP, implementing optimized SEO strategies to improve search visibility.",
     },
     {
       id: 2,
+      src: "/realtime-chat.PNG",
+      code: "https://github.com/flotus24/realtime-chat",
+      desc: "A real-time chat application leveraging Next.js for a responsive frontend, NestJS for a scalable backend, and Socket.IO to enable efficient, bidirectional communication.",
+    },
+    {
+      id: 3,
       src: "/burger-joint.png",
       link: "https://burger-joint-demo.netlify.app/",
       code: "https://github.com/flotus24/burger-joint",
       desc: "Single page website for a trendy burger restaurant with modern design using latest gsap animation.",
     },
     {
-      id: 3,
+      id: 4,
       src: "/jamazon.PNG",
       code: "https://github.com/flotus24/jamazon",
       desc: "Jamazon, an e-commerce website inspired by Amazon and Tokopedia, a platform that combines user-friendly design and vast product selection.",
     },
     {
-      id: 4,
+      id: 5,
       src: "/land_map.PNG",
       code: "https://github.com/flotus24/Land-Map",
       desc: "Land Map was made as a product of a thesis where it aims to centralize the mapping of the earth's surface, especially drought, on a website with the help of remote sensing.",
     },
     {
-      id: 5,
+      id: 6,
       src: "/ocors.PNG",
       code: "https://github.com/naufal58/OCORS/tree/main/OCORS",
       desc: "OCORS stand for Online Comic Reader and Store is a website that our team developed to read and buy comic so reader can read and buy comic legally and easily through our portal.",
@@ -104,13 +109,15 @@ const Portfolio = () => {
                       </a>
                     </div>
                   )}
-                  <div
-                    className={`hover:animate-pulse center m-4 duration-200 hover:scale-105 text-white w-fit px-3 py-1 flex items-center rounded-md bg-sky-500 cursor-pointer`}
-                  >
-                    <a href={code} target="_blank">
-                      Code
-                    </a>
-                  </div>
+                  {code && (
+                    <div
+                      className={`hover:animate-pulse center m-4 duration-200 hover:scale-105 text-white w-fit px-3 py-1 flex items-center rounded-md bg-sky-500 cursor-pointer`}
+                    >
+                      <a href={code} target="_blank">
+                        Code
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

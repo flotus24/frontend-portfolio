@@ -38,18 +38,24 @@ const Experience = () => {
     },
     {
       id: 5,
+      src: "/vue.svg",
+      title: "Vue",
+      style: "shadow-green-500 hover:shadow-green-300",
+    },
+    {
+      id: 6,
       src: "/tailwind.svg",
       title: "Tailwind",
       style: "shadow-sky-500 hover:shadow-sky-300",
     },
     {
-      id: 6,
+      id: 7,
       src: "/nextjs.svg",
       title: "Next JS",
       style: "shadow-gray-300 hover:shadow-white",
     },
     {
-      id: 7,
+      id: 8,
       src: "/github.svg",
       title: "Github",
       style: "shadow-gray-500 hover:shadow-gray-300",
