@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import React, { useState } from "react"
-import { FaBars, FaTimes } from "react-icons/fa"
-import { Link } from "react-scroll"
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
 
   type Item = {
-    id: number
-    link: string
-  }
+    id: number;
+    link: string;
+  };
 
   const items: Item[] = [
     {
@@ -33,7 +33,7 @@ const Navbar = () => {
       id: 5,
       link: "contact",
     },
-  ]
+  ];
 
   return (
     <header>
@@ -48,7 +48,12 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
             >
-              <Link to={link} smooth duration={500}>
+              <Link
+                to={link}
+                smooth
+                duration={500}
+                offset={link !== "experience" ? -80 : -100}
+              >
                 {link}
               </Link>
             </li>
@@ -83,7 +88,7 @@ const Navbar = () => {
         )}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

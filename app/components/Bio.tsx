@@ -1,16 +1,13 @@
-"use client"
+"use client";
 
-import React from "react"
-import { HiOutlineArrowNarrowRight } from "react-icons/hi"
-import { Link } from "react-scroll"
-import { motion } from "motion/react"
+import React from "react";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
+import { motion } from "motion/react";
 
 const Bio = () => {
   return (
-    <div
-      id="home"
-      className="h-[100vh] md:h-[90vh] w-full bg-gradient-to-b bg-slate-950"
-    >
+    <div id="home" className="h-[100vh] w-full bg-gradient-to-b bg-slate-950">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <motion.div
           initial={{ opacity: 0 }}
@@ -31,6 +28,7 @@ const Bio = () => {
               smooth
               duration={500}
               className="group text-white w-fit px-4 py-3 my-2 flex items-center rounded-md text-lg bg-sky-500 cursor-pointer"
+              offset={-80}
             >
               Portfolio
               <span className="group-hover:rotate-90 group-hover:-translate-y-1 delay-75 duration-300">
@@ -54,7 +52,7 @@ const Bio = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

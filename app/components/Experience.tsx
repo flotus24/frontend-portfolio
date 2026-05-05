@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import React from "react"
-import { motion } from "motion/react"
+import React from "react";
+import { motion } from "motion/react";
 
 const Experience = () => {
   type Techs = {
-    id: number
-    src: string
-    title: string
-    style: string
-  }
+    id: number;
+    src: string;
+    title: string;
+    style: string;
+  };
 
   const techs: Techs[] = [
     {
@@ -54,10 +54,10 @@ const Experience = () => {
       title: "Github",
       style: "shadow-gray-500 hover:shadow-gray-300",
     },
-  ]
+  ];
 
   return (
-    <div id="experience" className="bg-slate-950 w-full h-screen">
+    <div id="experience" className="bg-slate-950 w-full pb-20">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
           <motion.p
@@ -101,7 +101,7 @@ const Experience = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

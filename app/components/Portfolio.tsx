@@ -48,7 +48,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div id="portfolio" className="bg-slate-950 w-full text-white md:h-[120vh]">
+    <div id="portfolio" className="bg-slate-950 w-full py-10 text-white">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <motion.p
@@ -83,7 +83,7 @@ const Portfolio = () => {
               key={id}
               className="shadow-md lg:w-[300px] lg:h-[410px] shadow-gray-600 rounded-lg"
             >
-              <div className="sm:h-[170px] md:h-[160px] content-center rounded-md">
+              <div className="sm:h-[170px] content-center rounded-md">
                 <img
                   src={src}
                   alt=" "

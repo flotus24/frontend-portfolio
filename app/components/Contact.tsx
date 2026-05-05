@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import React from "react"
-import { motion } from "motion/react"
+import React from "react";
+import { motion } from "motion/react";
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: [50, 0] }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-4xl font-bold text-cyan-300"
+            className="text-4xl font-bold text-cyan-300 flex justify-center"
           >
             Contact
           </motion.p>
@@ -22,7 +22,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: [25, 0] }}
             viewport={{ once: true }}
             transition={{ duration: 1, times: [0.5] }}
-            className="font-secondary mt-3"
+            className="font-secondary mt-3 flex justify-center"
           >
             Submit the form below to get in touch with me
           </motion.p>
@@ -45,18 +45,21 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              required
             />
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              required
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows={5}
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              required
             ></textarea>
             <button className="text-white bg-sky-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let&apos;s Talk
@@ -65,7 +68,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
