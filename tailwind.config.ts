@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         signature: ["Great Vibes"],
         secondary: ["Lato"],
+        header: ["Montserrat"],
       },
       keyframes: {
         ping_logo: {
@@ -24,5 +25,5 @@ const config: Config = {
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
