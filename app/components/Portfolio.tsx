@@ -46,9 +46,10 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      src: "/ocors.PNG",
-      code: "https://github.com/naufal58/OCORS/tree/main/OCORS",
-      desc: "OCORS stand for Online Comic Reader and Store is a website that our team developed to read and buy comic so reader can read and buy comic legally and easily through our portal.",
+      src: "/ooze.PNG",
+      code: "https://github.com/flotus24/ooze",
+      link: "https://flotusooze.netlify.app/",
+      desc: "Single page website with modern and trendy interface made with the help of Google AI Studio.",
     },
   ];
 
