@@ -2,10 +2,12 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const Portfolio = () => {
   type Portfolio = {
     id: number;
+    name: string;
     src: string;
     link?: string;
     code?: string;
@@ -15,18 +17,22 @@ const Portfolio = () => {
   const portfolios: Portfolio[] = [
     {
       id: 1,
+      name: "Subkom",
       src: "/subkom.PNG",
       link: "https://subkom.co.id/",
       desc: "Freelance project for a computer hardware store delivering a responsive single-page website using React, GSAP, implementing optimized SEO strategies to improve search visibility.",
     },
     {
       id: 2,
-      src: "/realtime-chat.PNG",
-      code: "https://github.com/flotus24/realtime-chat",
-      desc: "A real-time chat application leveraging Next.js for a responsive frontend, NestJS for a scalable backend, and Socket.IO to enable efficient, bidirectional communication.",
+      name: "Steam Trace",
+      src: "/steam-trace.png",
+      link: "https://steam-trace.vercel.app/",
+      code: "https://github.com/flotus24/steam-trace",
+      desc: "Shareable retrospective platform that transforms your Steam gameplay history into a personalized recap card by linking your account through a secure, single-click Steam login.",
     },
     {
       id: 3,
+      name: "Burger Joint",
       src: "/burger-joint.png",
       link: "https://burger-joint-demo.netlify.app/",
       code: "https://github.com/flotus24/burger-joint",
@@ -34,18 +40,21 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      src: "/jamazon.PNG",
-      code: "https://github.com/flotus24/jamazon",
-      desc: "Jamazon, an e-commerce website inspired by Amazon and Tokopedia, a platform that combines user-friendly design and vast product selection.",
+      name: "Real-time Chat",
+      src: "/realtime-chat.PNG",
+      code: "https://github.com/flotus24/realtime-chat",
+      desc: "A real-time chat application leveraging Next.js for a responsive frontend, NestJS for a scalable backend, and Socket.IO to enable efficient, bidirectional communication.",
     },
     {
       id: 5,
+      name: "Land Map",
       src: "/land_map.PNG",
       code: "https://github.com/flotus24/Land-Map",
       desc: "Land Map was made as a product of a thesis where it aims to centralize the mapping of the earth's surface, especially drought, on a website with the help of remote sensing.",
     },
     {
       id: 6,
+      name: "Ooze",
       src: "/ooze.PNG",
       code: "https://github.com/flotus24/ooze",
       link: "https://flotusooze.netlify.app/",
@@ -84,16 +93,18 @@ const Portfolio = () => {
           transition={{ duration: 1.5, times: [0.5] }}
           className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 pb-20 sm:pb-0"
         >
-          {portfolios.map(({ id, src, link, code, desc }) => (
+          {portfolios.map(({ id, name, src, link, code, desc }) => (
             <div
               key={id}
-              className="shadow-md lg:w-[300px] lg:h-[410px] shadow-gray-600 rounded-lg"
+              className="shadow-md lg:w-[300px] lg:h-[410px] shadow-gray-600 rounded-md"
             >
-              <div className="sm:h-[170px] content-center rounded-md">
-                <img
+              <div className="content-center rounded-md">
+                <Image
                   src={src}
-                  alt=" "
-                  className="rounded-md duration-200 hover:scale-105 w-[100%] lg:w-[300px]"
+                  alt={name}
+                  width={310}
+                  height={180}
+                  className="rounded-md duration-200 hover:scale-105 aspect-video"
                 />
               </div>
               <div className="flex flex-col items-center justify-center ">
